@@ -1,0 +1,15 @@
+{% extends base_template %}
+
+{% block title %}{{ 'title_dashboard'|trans({}, 'SonataAdminBundle') }}{% endblock%}
+{% block breadcrumb %}{% endblock %}
+{% block content %}
+    <div class="row-fluid">
+        <div class="span12">
+            {% for block in blocks %}
+                {% if block.position == 'center' %}
+                    {{ sonata_block_render({ 'type': block.type, 'settings': block.settings}) }}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
