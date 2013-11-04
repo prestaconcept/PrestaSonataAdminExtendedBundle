@@ -1,10 +1,18 @@
 PrestaSonataAdminExtendedBundle
 ===============================
 
+[![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaSonataAdminExtendedBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaSonataAdminExtendedBundle)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaSonataAdminExtendedBundle/badges/quality-score.png?s=fdbe18e09e866427bfb9c37268372cd9611b6607)](https://scrutinizer-ci.com/g/prestaconcept/PrestaSonataAdminExtendedBundle/)
+
+[![Latest Stable Version](https://poser.pugx.org/presta/sonata-admin-extended-bundle/v/stable.png)](https://packagist.org/packages/presta/sonata-admin-extended-bundle)
+[![Total Downloads](https://poser.pugx.org/presta/sonata-admin-extended-bundle/downloads.png)](https://packagist.org/packages/presta/sonata-admin-extended-bundle)
+
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/21a9c095-6aff-4661-82a3-4b3b6f36f5e3/big.png)](https://insight.sensiolabs.com/projects/21a9c095-6aff-4661-82a3-4b3b6f36f5e3)
+[![knpbundles.com](http://knpbundles.com/prestaconcept/PrestaSonataAdminExtendedBundle/badge)](http://knpbundles.com/prestaconcept/PrestaSonataAdminExtendedBundle)
 
 #Overview #
 
-This bundle provide Prestaconcept extensions for Sonata Admin.
+This bundle provides Prestaconcept extensions for Sonata Admin.
 
 :speech_balloon: If you want to have some information about the project progression you can register to our [google group][3]
 
@@ -48,9 +56,6 @@ Thanks to
 **Lead Developer** : [@nicolas-bastien](https://github.com/nicolas-bastien)
 
 Released under the MIT License
-
-[3]: https://groups.google.com/forum/?hl=fr&fromgroups#!forum/prestacms-devs
-
 
 
 [2]: https://github.com/prestaconcept/prestacms-sandbox
