@@ -1,0 +1,5 @@
+
+
+twig:
+    globals:
+        presta_sonata_admin_extended_locales: %presta_sonata_admin_extended.locales%
