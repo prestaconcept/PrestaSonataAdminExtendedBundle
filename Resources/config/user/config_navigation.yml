@@ -1,0 +1,13 @@
+
+presta_sonata_navigation:
+    menu:
+        items:
+            user:
+                route: admin_sonata_user_user_list
+                roles:
+                    - ROLE_ADMIN_USER
+                children:
+                    users:
+                        route: admin_sonata_user_user_list
+                    groups:
+                        route: admin_sonata_user_group_list

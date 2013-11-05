@@ -2,9 +2,21 @@
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file source-language="en" target-language="en" datatype="plaintext" original="PrestaSonataAdminExtendedBundle.en.xliff">
         <body>
-            <trans-unit id="admin.locale_switcher.tooltipl">
+            <trans-unit id="admin.locale_switcher.tooltip">
                 <source>admin.locale_switcher.tooltip</source>
                 <target>Change language</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.user.title">
+                <source>block.dashboard.user.title</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.user.users.title">
+                <source>block.dashboard.user.users.title</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.user.groups.title">
+                <source>block.dashboard.user.groups.title</source>
+                <target>Groups</target>
             </trans-unit>
         </body>
     </file>

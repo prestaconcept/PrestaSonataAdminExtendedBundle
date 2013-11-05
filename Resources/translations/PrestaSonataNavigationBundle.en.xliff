@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="PrestaSonataNavigation.en.xliff">
+        <body>
+            <trans-unit id="navigation.user.label">
+                <source>navigation.user.label</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit id="navigation.user.users.label">
+                <source>navigation.user.users.label</source>
+                <target>Manage users</target>
+            </trans-unit>
+            <trans-unit id="navigation.user.groups.description">
+                <source>navigation.user.groups.description</source>
+                <target>Manage groups</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

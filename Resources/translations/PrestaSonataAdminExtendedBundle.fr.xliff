@@ -6,6 +6,18 @@
                 <source>admin.locale_switcher.tooltip</source>
                 <target>Changer de langue</target>
             </trans-unit>
+            <trans-unit id="block.dashboard.user.title">
+                <source>block.dashboard.user.title</source>
+                <target>Utilisateurs</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.user.users.title">
+                <source>block.dashboard.user.users.title</source>
+                <target>Utilisateurs</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.user.groups.title">
+                <source>block.dashboard.user.groups.title</source>
+                <target>Groupes</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

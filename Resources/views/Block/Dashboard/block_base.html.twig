@@ -1,0 +1,15 @@
+
+{# set collapse_in = " " in your base template to get accordion closed y default  #}
+{% if collapse_in is not defined %}{% set collapse_in = "in" %}{% endif %}
+
+<div class="dashboard-block" id="{{blockId }}">
+    <div class="dashboard-block-title" data-toggle="collapse" data-target="#{{blockId }}-content">
+        <h3>{% block block_title %} {% endblock %}</h3>
+    </div>
+    <div id="{{blockId }}-content" class="collapse {{ collapse_in }}">
+        <div class="dashboard-block-content">
+            {% block block_content %} {% endblock %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
