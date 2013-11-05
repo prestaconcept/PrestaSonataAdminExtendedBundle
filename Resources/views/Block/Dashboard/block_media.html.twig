@@ -1,0 +1,34 @@
+{% extends 'PrestaSonataAdminExtendedBundle:Block/Dashboard:block_base.html.twig' %}
+
+{% trans_default_domain "PrestaSonataAdminExtendedBundle" %}
+
+{% block block_title %}{{ 'block.dashboard.media.title' | trans }}{% endblock %}
+
+{% block block_content %}
+    <div class="span6">
+        <div class="block-content-block block-content-block-media">
+            <h4>{{ 'block.dashboard.media.medias.title' | trans }}</h4>
+            <a href="{{ mediaAdmin.generateUrl('create')}}" class="btn btn-small">
+                <i class="icon-plus"></i>&nbsp;
+                {%- trans from 'SonataAdminBundle' %}link_add{% endtrans -%}
+            </a>
+            <a href="{{ mediaAdmin.generateUrl('list')}}" class="btn btn-small">
+                <i class="icon-list"></i>&nbsp;
+                {%- trans from 'SonataAdminBundle' %}link_list{% endtrans -%}
+            </a>
+        </div>
+    </div>
+    <div class="span6">
+        <div class="block-content-block block-content-block-media-gallery">
+            <h4>{{ 'block.dashboard.media.galleries.title' | trans }}</h4>
+            <a href="{{ galleryAdmin.generateUrl('create')}}" class="btn btn-small">
+                <i class="icon-plus"></i>&nbsp;
+                {%- trans from 'SonataAdminBundle' %}link_add{% endtrans -%}
+            </a>
+            <a href="{{ galleryAdmin.generateUrl('list')}}" class="btn btn-small">
+                <i class="icon-list"></i>&nbsp;
+                {%- trans from 'SonataAdminBundle' %}link_list{% endtrans -%}
+            </a>
+        </div>
+    </div>
+{% endblock %}

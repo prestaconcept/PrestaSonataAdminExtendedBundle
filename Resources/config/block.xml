@@ -6,10 +6,18 @@
 
     <parameters>
         <parameter key="presta_sonata_admin_extended.block.dashboard.user.class">Presta\SonataAdminExtendedBundle\Block\Dashboard\UserBlockService</parameter>
+        <parameter key="presta_sonata_admin_extended.block.dashboard.media.class">Presta\SonataAdminExtendedBundle\Block\Dashboard\MediaBlockService</parameter>
     </parameters>
 
     <services>
         <service id="presta_sonata_admin_extended.block.dashboard.user" class="%presta_sonata_admin_extended.block.dashboard.user.class%">
+            <argument/>
+            <argument type="service" id="templating" />
+            <argument type="service" id="sonata.admin.pool" />
+            <tag name="sonata.block"/>
+        </service>
+
+        <service id="presta_sonata_admin_extended.block.dashboard.media" class="%presta_sonata_admin_extended.block.dashboard.media.class%">
             <argument/>
             <argument type="service" id="templating" />
             <argument type="service" id="sonata.admin.pool" />

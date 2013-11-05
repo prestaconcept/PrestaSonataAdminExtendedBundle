@@ -14,6 +14,26 @@
                 <source>navigation.user.groups.description</source>
                 <target>Manage groups</target>
             </trans-unit>
+            <trans-unit id="navigation.media.label">
+                <source>navigation.media.label</source>
+                <target>Medias</target>
+            </trans-unit>
+            <trans-unit id="navigation.media.medias.label">
+                <source>navigation.media.medias.label</source>
+                <target>Medias</target>
+            </trans-unit>
+            <trans-unit id="navigation.media.medias.description">
+                <source>navigation.media.medias.description</source>
+                <target>Manage medias</target>
+            </trans-unit>
+            <trans-unit id="navigation.media.galleries.label">
+                <source>navigation.media.galleries.label</source>
+                <target>Galleries</target>
+            </trans-unit>
+            <trans-unit id="navigation.media.galleries.description">
+                <source>navigation.media.galleries.description</source>
+                <target>Manage galleries</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

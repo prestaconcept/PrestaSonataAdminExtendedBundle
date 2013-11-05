@@ -1,0 +1,11 @@
+
+presta_sonata_navigation:
+    menu:
+        items:
+            media:
+                route: admin_sonata_media_media_list
+                children:
+                    medias:
+                        route: admin_sonata_media_media_list
+                    galleries:
+                        route: admin_sonata_media_gallery_list

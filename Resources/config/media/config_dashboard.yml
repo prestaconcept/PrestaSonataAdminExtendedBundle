@@ -1,0 +1,9 @@
+
+sonata_block:
+    blocks:
+        presta_sonata_admin_extended.block.dashboard.media:
+
+sonata_admin:
+    dashboard:
+        blocks:
+            - { position: left, type: presta_sonata_admin_extended.block.dashboard.media }

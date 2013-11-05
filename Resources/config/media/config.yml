@@ -1,0 +1,9 @@
+
+#Configuration for Sonata Media
+doctrine:
+    orm:
+        entity_managers:
+            default:
+                mappings:
+                    ApplicationSonataMediaBundle: ~
+                    SonataMediaBundle: ~

@@ -9,20 +9,22 @@
  */
 namespace Presta\SonataAdminExtendedBundle\Block\Dashboard;
 
-use Sonata\BlockBundle\Model\BlockInterface;
+use Sonata\BlockBundle\Block\BlockContextInterface;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Templating\EngineInterface;
 
 use Sonata\AdminBundle\Admin\Pool;
 use Sonata\AdminBundle\Form\FormMapper;
 use Sonata\AdminBundle\Validator\ErrorElement;
-use Sonata\BlockBundle\Block\BlockContextInterface;
+use Sonata\BlockBundle\Model\BlockInterface;
 use Sonata\BlockBundle\Block\BaseBlockService;
 
 /**
+ * Dashboard Media Management block
+ *
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class UserBlockService extends BaseBlockService
+class MediaBlockService extends BaseBlockService
 {
     /**
      * @var Pool
@@ -44,41 +46,30 @@ class UserBlockService extends BaseBlockService
     /**
      * {@inheritdoc}
      */
-    public function execute(BlockContextInterface $blockContext, Response $response = null)
+    public function getName()
     {
-        if (!$response) {
-            $response = new Response;
-        }
-        //------------------
-        // check role
-        $security = $this->pool->getContainer()->get('security.context');
-        if (!$security->isGranted('ROLE_ADMIN_USER')) {
-            return $response;
-        }
-        //------------------
-
-        $settings = array_merge($this->getDefaultSettings(), $blockContext->getSettings());
-
-        return $this->renderResponse(
-            'PrestaSonataAdminExtendedBundle:Block/Dashboard:block_user.html.twig',
-            array(
-                'block_context' => $blockContext,
-                'block'         => $blockContext->getBlock(),
-                'blockId'       => 'block-user',
-                'userAdmin'     => $this->pool->getAdminByAdminCode('sonata.user.admin.user'),
-                'groupAdmin'    => $this->pool->getAdminByAdminCode('sonata.user.admin.group'),
-                'settings'      => $settings
-            ),
-            $response
-        );
+        return 'Dashboard Media';
     }
 
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function execute(BlockContextInterface $blockContext, Response $response = null)
     {
-        return 'Dashboard Users';
+        $settings = array_merge($this->getDefaultSettings(), $blockContext->getSettings());
+
+        return $this->renderResponse(
+            'PrestaSonataAdminExtendedBundle:Block/Dashboard:block_media.html.twig',
+            array(
+                'block_context' => $blockContext,
+                'block'         => $blockContext->getBlock(),
+                'blockId'       => 'block-media',
+                'mediaAdmin'    => $this->pool->getAdminByAdminCode('sonata.media.admin.media'),
+                'galleryAdmin'  => $this->pool->getAdminByAdminCode('sonata.media.admin.gallery'),
+                'settings'      => $settings
+            ),
+            $response
+        );
     }
 
     /**
@@ -92,14 +83,14 @@ class UserBlockService extends BaseBlockService
     /**
      * {@inheritdoc}
      */
-    public function buildEditForm(FormMapper $form, BlockInterface $block)
+    public function validateBlock(ErrorElement $errorElement, BlockInterface $block)
     {
     }
 
     /**
      * {@inheritdoc}
      */
-    public function validateBlock(ErrorElement $errorElement, BlockInterface $block)
+    public function buildEditForm(FormMapper $formMapper, BlockInterface $block)
     {
     }
 }

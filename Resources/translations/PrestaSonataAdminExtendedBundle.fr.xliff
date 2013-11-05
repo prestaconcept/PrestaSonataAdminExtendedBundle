@@ -18,6 +18,18 @@
                 <source>block.dashboard.user.groups.title</source>
                 <target>Groupes</target>
             </trans-unit>
+            <trans-unit id="block.dashboard.media.title">
+                <source>block.dashboard.media.title</source>
+                <target>Médias</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.media.medias.title">
+                <source>block.dashboard.media.medias.title</source>
+                <target>Médias</target>
+            </trans-unit>
+            <trans-unit id="block.dashboard.media.galleries.title">
+                <source>block.dashboard.media.galleries.title</source>
+                <target>Galleries</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
