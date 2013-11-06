@@ -1,0 +1,8 @@
+
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+
+{% block field%}
+    {% for key, val in value %}
+        <div class="locale locale-{{ val }}">{{val|trans}}</div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,21 @@
+{#
+
+@author: Nicolas Bastien <nbastien@prestaconcept>
+
+$listMapper->add('media', null, array('template' => 'PrestaSonataAdminExtendedBundle:CRUD:list_image.html.twig'));
+
+you can specify a format or 'admin_list' of your context is used
+
+#}
+
+{% extends 'SonataAdminBundle:CRUD:base_list_field.html.twig' %}
+
+{% block field%}
+    {% if value is not null %}
+        {% if (field_description.options.format is defined) %}
+            {% media value, field_description.options.format %}
+        {% else %}
+            {% media value, 'admin_list' %}
+        {% endif %}
+    {% endif %}
+{% endblock %}
