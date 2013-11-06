@@ -32,9 +32,9 @@ class MediaBlockService extends BaseBlockService
     protected $pool;
 
     /**
-     * @param string            $name
-     * @param EngineInterface   $templating
-     * @param Pool              $pool
+     * @param string          $name
+     * @param EngineInterface $templating
+     * @param Pool            $pool
      */
     public function __construct($name, EngineInterface $templating, Pool $pool)
     {
