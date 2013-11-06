@@ -1,0 +1,14 @@
+{#
+    @author Nicolas Bastien <nbastien@prestaconcept>
+
+    Add locale switcher
+#}
+
+{% extends 'SonataAdminBundle:CRUD:base_edit.html.twig' %}
+
+{% block actions %}
+    {{ parent() }}
+    {{ include(
+        'Presta\SonataGedmoDoctrineExtensionsBundle:CRUD:locale_switcher.html.twig'
+    ) }}
+{% endblock %}
