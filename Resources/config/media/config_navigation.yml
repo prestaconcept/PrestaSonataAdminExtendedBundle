@@ -4,6 +4,8 @@ presta_sonata_navigation:
         items:
             media:
                 route: admin_sonata_media_media_list
+                roles:
+                    - ROLE_ADMIN_MEDIA
                 children:
                     medias:
                         route: admin_sonata_media_media_list

@@ -36,3 +36,6 @@
         </div>
     </div>
 {% endblock %}
+
+{% block body_attributes %}class="sonata-bc {% if _side_menu is empty %}sonata-ba-no-side-menu{% endif %}{% if not app.user %} login-screen{% endif %}"{% endblock %}
+

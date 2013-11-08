@@ -15,7 +15,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 /**
  * @author Nicolas Bastien <nbastien@prestaconcept.net>
  */
-class AbstractAdmin extends Admin
+abstract class AbstractAdmin extends Admin
 {
     /**
      * The translation domain to be used to translate messages

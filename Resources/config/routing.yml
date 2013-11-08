@@ -1,0 +1,64 @@
+
+#FOSUser
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+fos_user_register:
+    resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
+    prefix: /register
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+
+fos_user_change_password:
+    resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
+    prefix: /change-password
+
+#Sonata Project
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin/{_locale}
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin/{_locale}
+
+sonata_user:
+    resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+    prefix: /admin/{_locale}
+
+sonata_user_impersonating:
+    pattern:  /user
+    defaults: { _controller: FOSUserBundle:Profile:show }
+
+#override sonata routes to handle base url
+sonata_admin_dashboard:
+    pattern: /admin/{_locale}
+    defaults: { _controller: SonataAdminBundle:Core:dashboard }
+
+sonata_admin_redirect:
+    pattern: /admin/{_locale}/
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /admin/%locale%
+        permanent: true
+
+sonata_admin_root:
+    pattern: /admin
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /admin/%locale%
+        permanent: true
+
+sonata_admin_root_slash:
+    pattern: /admin/
+    defaults:
+        _controller: FrameworkBundle:Redirect:urlRedirect
+        path: /admin/%locale%
+        permanent: true
