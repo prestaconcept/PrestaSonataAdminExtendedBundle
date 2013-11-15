@@ -8,7 +8,15 @@
             </trans-unit>
             <trans-unit id="navigation.user.users.label">
                 <source>navigation.user.users.label</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit id="navigation.user.users.description">
+                <source>navigation.user.users.description</source>
                 <target>Manage users</target>
+            </trans-unit>
+            <trans-unit id="navigation.user.groups.label">
+                <source>navigation.user.groups.label</source>
+                <target>Groups</target>
             </trans-unit>
             <trans-unit id="navigation.user.groups.description">
                 <source>navigation.user.groups.description</source>
