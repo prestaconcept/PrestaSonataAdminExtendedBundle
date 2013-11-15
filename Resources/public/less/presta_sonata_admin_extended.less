@@ -49,58 +49,72 @@
             padding: 15px 25px;
         }
     }
+
+    .sonata-ba-form {
+
+        .locale_switcher {
+            padding: 1px 0px 0px 0px;
+            text-align: right;
+            margin-right: 15px;
+            float: right;
+            a {
+                margin-right: 0px;
+                padding: 2px;
+                opacity: 0.5;
+
+                &.active {
+                    opacity: 1;
+                }
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        label.wysiwyg.locale,
+        label.checkbox.locale,
+        input.locale,
+        select.locale,
+        li.locale a {
+            background-repeat: no-repeat;
+        }
+        input[type="text"].locale,
+        select.locale {
+            padding-left: 35px !important;
+            background-position: 5px center;
+        }
+        label.wysiwyg.locale, label.checkbox.locale {
+            padding-right: 35px;
+            background-position: right bottom;
+        }
+        label.wysiwyg.locale_fr, label.checkbox.locale_fr, input.locale_fr, textarea.locale_fr, select.locale_fr, li.locale_fr a {
+            background-image: url('/bundles/prestasonataadminextended/img/flags/fr.png');
+        }
+        label.wysiwyg.locale_it, label.checkbox.locale_it, input.locale_it, textarea.locale_it, select.locale_it, li.locale_it a {
+            background-image: url('/bundles/prestasonataadminextended/img/flags/it.png');
+        }
+        label.wysiwyg.locale_nl, label.checkbox.locale_nl, input.locale_nl, textarea.locale_nl, select.locale_nl, li.locale_nl a {
+            background-image: url('/bundles/prestasonataadminextended/img/flags/nl.png');
+        }
+        label.wysiwyg.locale_es, label.checkbox.locale_es, input.locale_es, textarea.locale_es, select.locale_es, li.locale_es a {
+            background-image: url('/bundles/prestasonataadminextended/img/flags/es.png');
+        }
+        label.wysiwyg.locale_en, label.checkbox.locale_en, input.locale_en, textarea.locale_en, select.locale_en, li.locale_en a {
+            background-image: url('/bundles/prestasonataadminextended/img/flags/en.png');
+        }
+        input[type="checkbox"].locale_fr:before {
+            content: url('/bundles/prestasonataadminextended/img/flags/fr.png');
+        }
+        input[type="checkbox"].locale_it:before {
+            content: url('/bundles/prestasonataadminextended/img/flags/it.png');
+        }
+        input[type="checkbox"].locale_nl:before {
+            content: url('/bundles/prestasonataadminextended/img/flags/nl.png');
+        }
+        input[type="checkbox"].locale_es:before {
+            content: url('/bundles/prestasonataadminextended/img/flags/es.png');
+        }
+        input[type="checkbox"].locale_en:before {
+            content: url('/bundles/prestasonataadminextended/img/flags/en.png');
+        }
+    }
 }
-
-
-//.fdqsf{
-//    div.dashboard-block {
-//        border: 1px solid #cdcdcd;
-//        margin: 0px 0 20px 0;
-//        padding: 0px;
-//        .border-radius(3px);
-//        .box-shadow(0 13px 5px -10px #AAA);
-//
-//        .dashboard-block-title {
-//            border-bottom: none;
-//            #gradient > .vertical(#ffffff, #ededed);
-//
-//            h3 {
-//                font-weight: bold;
-//                font-size: 14px;
-//                font-family: @headingsFontFamily;
-//                line-height: 35px;
-//                color: @headingsColor;
-//                margin: 0px;
-//                cursor: pointer;
-//                text-shadow: 1px 1px 0 #fff;
-//                padding-left: 25px;
-//                text-transform: capitalize;
-//            }
-//        }
-//        .dashboard-block-content {
-//            padding: 15px 25px;
-//            border-top: 1px solid #CECECE;
-//            background: #FFF url(@imagesThemePath + 'background/inner-shadow.png') repeat-x;
-//
-//            h4 {
-//                margin: 0 0 10px 0;
-//                font-family: @headingsFontFamily;
-//                color: @headingsColor;
-//                text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-//                font-weight: normal;
-//            }
-//            a.link {
-//                margin-left: 10px;
-//            }
-//            .block-content-block {
-//                padding-left: 65px;
-//                min-height: 60px;
-//                background-position: 0 7px;
-//                background-color: transparent;
-//                background-repeat: no-repeat;
-//            }
-//        }
-//
-//    }
-//
-//}

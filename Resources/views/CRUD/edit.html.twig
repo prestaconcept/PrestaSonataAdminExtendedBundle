@@ -6,9 +6,10 @@
 
 {% extends 'SonataAdminBundle:CRUD:base_edit.html.twig' %}
 
-{% block actions %}
-    {{ parent() }}
+{% block form %}
+
     {{ include(
         'Presta\SonataGedmoDoctrineExtensionsBundle:CRUD:locale_switcher.html.twig'
     ) }}
+    {{ parent() }}
 {% endblock %}
