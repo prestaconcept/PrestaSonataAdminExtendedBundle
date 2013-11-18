@@ -73,6 +73,7 @@
         label.wysiwyg.locale,
         label.checkbox.locale,
         input.locale,
+        textarea.locale,
         select.locale,
         li.locale a {
             background-repeat: no-repeat;
@@ -81,6 +82,10 @@
         select.locale {
             padding-left: 35px !important;
             background-position: 5px center;
+        }
+        textarea.locale {
+            padding-left: 35px;
+            background-position: 5px 5px;
         }
         label.wysiwyg.locale, label.checkbox.locale {
             padding-right: 35px;
@@ -115,6 +120,20 @@
         }
         input[type="checkbox"].locale_en:before {
             content: url('/bundles/prestasonataadminextended/img/flags/en.png');
+        }
+        .form-horizontal .controls input[type="checkbox"] {
+            /*top: 5px;*/
+            position: relative;
+            width: 15px;
+
+            &.locale {
+                width: 65px;
+                background-position: 0px center;
+            }
+
+            &:before {
+                margin-right: 35px;
+            }
         }
     }
 }
