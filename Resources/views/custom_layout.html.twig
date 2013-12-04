@@ -42,3 +42,16 @@
 class="sonata-bc {% if _side_menu is empty %}sonata-ba-no-side-menu{% endif %}{% if not app.user %} login-screen{% endif %} {% if (object.locale is defined) %}locale_{{ object.locale }}{% endif %}"
 {% endblock %}
 
+
+{% block javascripts %}
+    {{  parent() }}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("form input.datepicker").datepicker({
+                dateFormat: 'dd/mm/yyyy',
+                firstDay:1
+            });
+        });
+    </script>
+{% endblock %}
