@@ -30,7 +30,7 @@ abstract class BaseController extends sfController
      *
      * @return boolean true if the request is done by an ajax like query
      */
-    public function isXmlHttpRequest()
+    protected function isXmlHttpRequest()
     {
         return $this->get('request')->isXmlHttpRequest() || $this->get('request')->get('_xml_http_request');
     }
@@ -40,7 +40,7 @@ abstract class BaseController extends sfController
      *
      * @return string the template name
      */
-    public function getBaseTemplate()
+    protected function getBaseTemplate()
     {
         if ($this->isXmlHttpRequest()) {
             return $this->admin->getTemplate('ajax');

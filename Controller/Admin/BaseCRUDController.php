@@ -19,7 +19,7 @@ use Sonata\AdminBundle\Controller\CRUDController;
 class BaseCRUDController extends CRUDController
 {
     /**
-     * {@inherit}
+     * {@inheritdoc}
      */
     public function createAction()
     {
