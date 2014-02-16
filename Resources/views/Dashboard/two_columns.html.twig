@@ -2,7 +2,7 @@
 
 {% block title %}{{ 'title_dashboard'|trans({}, 'SonataAdminBundle') }}{% endblock%}
 {% block breadcrumb %}
-    <li><a href="/admin/fr">Tableau de bord</a></li>
+    <li><a href="{{ url('sonata_admin_dashboard') }}">{{ 'breadcrumb.link_dashboard'|trans({}, 'PrestaCMSCoreBundle') }}</a></li>
 {% endblock %}
 {% block content %}
     <div class="row-fluid">
