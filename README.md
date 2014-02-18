@@ -3,7 +3,6 @@ PrestaSonataAdminExtendedBundle
 
 [![Build Status](https://secure.travis-ci.org/prestaconcept/PrestaSonataAdminExtendedBundle.png?branch=master)](http://travis-ci.org/prestaconcept/PrestaSonataAdminExtendedBundle)
 [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/prestaconcept/PrestaSonataAdminExtendedBundle/badges/quality-score.png?s=fdbe18e09e866427bfb9c37268372cd9611b6607)](https://scrutinizer-ci.com/g/prestaconcept/PrestaSonataAdminExtendedBundle/)
-
 [![Latest Stable Version](https://poser.pugx.org/presta/sonata-admin-extended-bundle/v/stable.png)](https://packagist.org/packages/presta/sonata-admin-extended-bundle)
 [![Total Downloads](https://poser.pugx.org/presta/sonata-admin-extended-bundle/downloads.png)](https://packagist.org/packages/presta/sonata-admin-extended-bundle)
 
