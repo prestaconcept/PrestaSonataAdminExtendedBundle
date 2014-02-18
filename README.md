@@ -13,7 +13,7 @@ PrestaSonataAdminExtendedBundle
 
 This bundle provides Prestaconcept extensions for Sonata Admin.
 
-![PrestaSonataAdminExtendedBundle-Dashboard](http://prestaconcept.github.io/assets/presta-sonata-admin-extended/presta-sonata-admin-extended-dashboard.jpg)
+
 
 :speech_balloon: If you want to have some information about the project progression you can register to our [google group][3]
 
