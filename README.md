@@ -50,7 +50,6 @@ Sandbox is also deployed for a live demonstration :
 
 Pull requests are welcome.
 
-
 Thanks to
 [everyone who has contributed](https://github.com/prestaconcept/PrestaSonataAdminExtendedBundle/graphs/contributors) already.
 
