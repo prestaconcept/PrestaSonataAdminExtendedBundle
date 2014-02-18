@@ -18,12 +18,16 @@ This bundle provides Prestaconcept extensions for Sonata Admin.
 
 :speech_balloon: If you want to have some information about the project progression you can register to our [google group][3]
 
+## Issue tracker ##
+
+:clipboard: Issues are managed in [prestaconcept/open-source-management](https://github.com/prestaconcept/open-source-management) to centralize our open source activity.
 
 #Features #
 
 - locale switcher based on configuration
 - dashboard layouts
-- PrestaSonataNavigation integration
+- PrestaSonataNavigationBundle integration
+- PrestaSonataGedmoDoctrineExtensionsBundle integration
 
 ## Documentation ##
 
