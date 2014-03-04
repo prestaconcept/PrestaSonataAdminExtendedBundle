@@ -21,7 +21,8 @@
         "sonata-project/easy-extends-bundle":"2.1.*",
         "sonata-project/intl-bundle": "2.2.*",
         "presta/sonata-navigation-bundle": "1.0.*",
-        "presta/sonata-gedmo-doctrine-extensions-bundle": "1.0.*",
+        "sonata-project/translation-bundle": "2.3.*",
+        "stof/doctrine-extensions-bundle": "1.1.*"
         "presta/composer-public-bundle": "1.*",
         "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
