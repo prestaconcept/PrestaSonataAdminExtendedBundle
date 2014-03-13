@@ -24,7 +24,8 @@
         "sonata-project/translation-bundle": "2.3.*",
         "stof/doctrine-extensions-bundle": "1.1.*",
         "presta/composer-public-bundle": "1.*",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "doctrine/doctrine-fixtures-bundle": "2.2.*",
+        "doctrine/doctrine-migrations-bundle": "2.1.*"
     },
     "suggest": {
         "presta/cms-core-bundle": "1.0.*"
