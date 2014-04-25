@@ -56,6 +56,17 @@ class MediaBlockService extends BaseBlockService
      */
     public function execute(BlockContextInterface $blockContext, Response $response = null)
     {
+        if (!$response) {
+            $response = new Response;
+        }
+        //------------------
+        // check role
+        $security = $this->pool->getContainer()->get('security.context');
+        if (!$security->isGranted('ROLE_ADMIN_MEDIA')) {
+            return $response;
+        }
+        //------------------
+
         $settings = array_merge($this->getDefaultSettings(), $blockContext->getSettings());
 
         return $this->renderResponse(
