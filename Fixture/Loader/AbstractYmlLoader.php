@@ -130,7 +130,6 @@ abstract class AbstractYmlLoader extends AbstractFixture
     protected function bindAssociations(&$entity, $associations)
     {
         foreach ($associations as $associationName => $associatedEntities) {
-
             $assocMethodName = $this->getAssocMethodName($entity, $associationName);
 
             foreach ($associatedEntities as $refCode) {
