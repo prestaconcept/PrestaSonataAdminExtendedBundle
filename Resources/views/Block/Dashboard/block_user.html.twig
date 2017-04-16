@@ -5,32 +5,34 @@
 {% block block_title %}{{ 'block.dashboard.user.title' | trans }}{% endblock %}
 
 {% block block_content %}
-    <div class="span6">
-        <div class="block-content-block block-content-block-user">
-            <h4>{{ 'block.dashboard.user.users.title' | trans }}</h4>
+    {% if (is_granted('ROLE_ADMIN_USER')) %}
+        <div class="span6">
+            <div class="block-content-block block-content-block-user">
+                <h4>{{ 'block.dashboard.user.users.title' | trans }}</h4>
 
-            <a href="{{ userAdmin.generateUrl('create')}}" class="btn btn-small">
-                <i class="icon-plus"></i>&nbsp;
-                {% trans from 'SonataAdminBundle' %}link_add{% endtrans %}
-            </a>
-            <a href="{{ userAdmin.generateUrl('list')}}" class="btn btn-small">
-                <i class="icon-list"></i>&nbsp;
-                {% trans from 'SonataAdminBundle' %}link_list{% endtrans %}
-            </a>
+                <a href="{{ userAdmin.generateUrl('create')}}" class="btn btn-small">
+                    <i class="icon-plus"></i>&nbsp;
+                    {% trans from 'SonataAdminBundle' %}link_add{% endtrans %}
+                </a>
+                <a href="{{ userAdmin.generateUrl('list')}}" class="btn btn-small">
+                    <i class="icon-list"></i>&nbsp;
+                    {% trans from 'SonataAdminBundle' %}link_list{% endtrans %}
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="span6">
-        <div class="block-content-block block-content-block-user-group">
-            <h4>{{ 'block.dashboard.user.groups.title' | trans }}</h4>
+        <div class="span6">
+            <div class="block-content-block block-content-block-user-group">
+                <h4>{{ 'block.dashboard.user.groups.title' | trans }}</h4>
 
-            <a href="{{ groupAdmin.generateUrl('create')}}" class="btn btn-small">
-                <i class="icon-plus"></i>&nbsp;
-                {%- trans from 'SonataAdminBundle' %}link_add{% endtrans -%}
-            </a>
-            <a href="{{ groupAdmin.generateUrl('list')}}" class="btn btn-small">
-                <i class="icon-list"></i>&nbsp;
-                {%- trans from 'SonataAdminBundle' %}link_list{% endtrans -%}
-            </a>
+                <a href="{{ groupAdmin.generateUrl('create')}}" class="btn btn-small">
+                    <i class="icon-plus"></i>&nbsp;
+                    {%- trans from 'SonataAdminBundle' %}link_add{% endtrans -%}
+                </a>
+                <a href="{{ groupAdmin.generateUrl('list')}}" class="btn btn-small">
+                    <i class="icon-list"></i>&nbsp;
+                    {%- trans from 'SonataAdminBundle' %}link_list{% endtrans -%}
+                </a>
+            </div>
         </div>
-    </div>
+    {% endif %}
 {% endblock %}
